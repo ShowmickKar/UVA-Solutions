@@ -5,7 +5,7 @@ typedef long long ll;
 void solve() {
 	string s, x;
 	int j = 0;
-	while(getline(cin, s)) {
+	while (getline(cin, s)) {
 		for (int i = 0; i < s.length(); i++) {
 			if (s[i] == '"' && j % 2 == 0) {
 				x += "``";
