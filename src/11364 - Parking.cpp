@@ -7,8 +7,7 @@ void solve() {
 	vector<int> a(n);
 	for (auto &it : a) cin >> it;
 	sort (a.begin(), a.end());
-	for (int i = 1; i < n; i++) ans += a[i] - a[i - 1];
-	cout << 2*ans << endl;	
+	cout << 2*(a[n - 1] - a[0]) << endl;	
 }
 
 int main() {
@@ -19,4 +18,3 @@ int main() {
 	while (t--)  
 		solve();
 }
-
